@@ -7,9 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="overflow-hidden">
-                <livewire:events.list-view />
-            </div>
+            <livewire:events.list-view />
         </div>
     </div>
 </x-app-layout>
