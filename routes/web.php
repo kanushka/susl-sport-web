@@ -33,11 +33,11 @@ Route::view('dashboard', 'dashboard')
     ->name('dashboard');
 
 Route::view('events', 'events')
-    ->middleware(['auth'])
+    ->middleware(['auth', 'admin'])
     ->name('events');
 
 Route::view('messages', 'messages')
-    ->middleware(['auth'])
+    ->middleware(['auth', 'admin'])
     ->name('messages');
 
 Route::view('profile', 'profile')

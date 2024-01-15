@@ -27,11 +27,21 @@ new class extends Component
     {
         $this->name = Auth::user()->name;
         $this->email = Auth::user()->email;
-        $this->height = Auth::user()->height;
-        $this->weight = Auth::user()->weight;
-        $this->dob = Auth::user()->dob;
-        $this->gender = Auth::user()->gender;
-        $this->sports = Auth::user()->sports->pluck('id')->toArray();
+        if (Auth::user()->height) {
+            $this->height = Auth::user()->height;
+        }
+        if (Auth::user()->weight) {
+            $this->weight = Auth::user()->weight;
+        }
+        if (Auth::user()->dob) {
+            $this->dob = Auth::user()->dob;
+        }
+        if (Auth::user()->gender) {
+            $this->gender = Auth::user()->gender;
+        }
+        if (Auth::user()->sports) {
+            $this->sports = Auth::user()->sports->pluck('id')->toArray();
+        }
         $this->allSports = Sport::all();
     }
 
@@ -108,21 +118,21 @@ new class extends Component
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
 
             @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! auth()->user()->hasVerifiedEmail())
-                <div>
-                    <p class="text-sm mt-2 text-gray-800 dark:text-gray-200">
-                        {{ __('Your email address is unverified.') }}
+            <div>
+                <p class="text-sm mt-2 text-gray-800 dark:text-gray-200">
+                    {{ __('Your email address is unverified.') }}
 
-                        <button wire:click.prevent="sendVerification" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
-                            {{ __('Click here to re-send the verification email.') }}
-                        </button>
-                    </p>
+                    <button wire:click.prevent="sendVerification" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
+                        {{ __('Click here to re-send the verification email.') }}
+                    </button>
+                </p>
 
-                    @if (session('status') === 'verification-link-sent')
-                        <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                            {{ __('A new verification link has been sent to your email address.') }}
-                        </p>
-                    @endif
-                </div>
+                @if (session('status') === 'verification-link-sent')
+                <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
+                    {{ __('A new verification link has been sent to your email address.') }}
+                </p>
+                @endif
+            </div>
             @endif
         </div>
 
