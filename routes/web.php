@@ -13,7 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('home');
+
+Route::view('/sports/tennis', 'sports-tennis');
+Route::view('/sports/karate', 'sports-karate');
+Route::view('/sports/badminton', 'sports-badminton');
+Route::view('/sports/chess', 'sports-chess');
+Route::view('/sports/carrom', 'sports-carrom');
+Route::view('/sports/rugger', 'sports-rugger');
+Route::view('/sports/cricket', 'sports-cricket');
+Route::view('/sports/kabadi', 'sports-kabadi');
+Route::view('/sports/football', 'sports-football');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
