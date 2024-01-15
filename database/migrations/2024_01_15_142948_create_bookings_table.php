@@ -20,7 +20,7 @@ return new class extends Migration
             $table->dateTime('end_date')->nullable();
             $table->integer('attendees')->default(0);
             $table->string('phone');
-            $table->string('reason')->nullable();
+            $table->text('reason')->nullable();
             $table->foreignIdFor(User::class);
             $table->timestamps();
         });

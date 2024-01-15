@@ -14,7 +14,9 @@
         </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+        <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
+            {{ __('Home') }}
+        </x-nav-link>
 
         <div class="hidden sm:flex sm:items-center sm:ms-6">
             <x-dropdown align="center">
@@ -62,9 +64,12 @@
                 </x-slot>
             </x-dropdown>
         </div>
-
-        <a href="/booking" class="text-sm font-semibold leading-6 text-gray-900">Booking</a>
-        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+        <x-nav-link :href="route('booking')" :active="request()->routeIs('booking')" wire:navigate>
+            {{ __('Booking') }}
+        </x-nav-link>
+        <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" wire:navigate>
+            {{ __('Contact') }}
+        </x-nav-link>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         @if (Route::has('login'))

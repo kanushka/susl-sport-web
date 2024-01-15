@@ -26,7 +26,7 @@ class CreateForm extends Component
     #[Validate('required|digits:10')]
     public $phone = '';
 
-    #[Validate('required|min:10|max:254')]
+    #[Validate('required|min:10|max:5000')]
     public $reason = '';
 
     public $user_id;

@@ -29,8 +29,12 @@ Route::view('/booking', 'booking')->name('booking');
 Route::view('/contact', 'contact')->name('contact');
 
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
+    ->middleware(['auth'])
     ->name('dashboard');
+
+Route::view('messages', 'messages')
+    ->middleware(['auth'])
+    ->name('messages');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
