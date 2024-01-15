@@ -63,8 +63,8 @@
             </x-dropdown>
         </div>
 
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Booking</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+        <a href="/booking" class="text-sm font-semibold leading-6 text-gray-900">Booking</a>
+        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         @if (Route::has('login'))
