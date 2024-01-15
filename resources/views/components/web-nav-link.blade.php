@@ -2,7 +2,7 @@
     <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">SUSL Sports</span>
-            <img class="h-8 w-auto" src="{{ asset('images/logo-dark.png') }}" alt="susl-logo">
+            <x-application-logo class="block h-10 w-auto fill-current text-gray-800 dark:text-gray-200" />
         </a>
     </div>
     <div class="flex lg:hidden">

@@ -10,6 +10,7 @@ use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
+
 new #[Layout('layouts.guest')] class extends Component
 {
     public string $name = '';
@@ -19,7 +20,7 @@ new #[Layout('layouts.guest')] class extends Component
     // Additional fields
     public string $height = '';
     public string $weight = '';
-    public string $gender = 'Male';
+    public string $gender = 'male';
     public string $dob = '';
     public $sports = [];
     public $allSports = [];
@@ -27,6 +28,7 @@ new #[Layout('layouts.guest')] class extends Component
     public function mount(): void
     {
         $this->allSports = Sport::all();
+        $this->dob = now()->subYears(20)->format('Y-m-d');
     }
 
     /**

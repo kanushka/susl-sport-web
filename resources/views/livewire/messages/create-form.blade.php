@@ -44,14 +44,6 @@
         <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
     </div>
 
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-
     @if (session('status') == 'contact-us-message-sent')
     <div class="mt-4 font-medium text-sm text-green-600 dark:text-green-400 text-center">
         {{ __('Your message has been successfully send.') }}
