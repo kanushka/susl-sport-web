@@ -25,6 +25,9 @@ Route::view('/sports/cricket', 'sports-cricket');
 Route::view('/sports/kabadi', 'sports-kabadi');
 Route::view('/sports/football', 'sports-football');
 
+Route::view('/booking', 'livewire.booking')->name('booking');
+Route::view('/contact', 'contact')->name('contact');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
