@@ -41,6 +41,7 @@ class CreateForm extends Component
 
     public function save()
     {
+        $this->validate();
         // additional validation to check if start date is already booked for the selected venue
         $existingBooking = Booking::where('venue_id', $this->venue_id)
             ->where('start_date', $this->start_date)

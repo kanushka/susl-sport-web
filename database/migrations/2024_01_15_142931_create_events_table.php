@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Sport::class);
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->foreignIdFor(Venue::class)->nullable();
             $table->dateTime('start_date');
             $table->dateTime('end_date')->nullable();

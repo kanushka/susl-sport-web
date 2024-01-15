@@ -32,6 +32,10 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth'])
     ->name('dashboard');
 
+Route::view('events', 'events')
+    ->middleware(['auth'])
+    ->name('events');
+
 Route::view('messages', 'messages')
     ->middleware(['auth'])
     ->name('messages');
