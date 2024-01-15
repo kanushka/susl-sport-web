@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Authenticatable
 {
@@ -21,6 +22,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'height',
+        'weight',
+        'gender',
+        'dob',
     ];
 
     /**
@@ -42,4 +47,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function sports(): BelongsToMany
+    {
+        return $this->belongsToMany(Sport::class);
+    }
 }

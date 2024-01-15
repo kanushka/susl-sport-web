@@ -11,11 +11,8 @@ use Livewire\Component;
 
 class CreateForm extends Component
 {
-    #[Validate('required|min:5')]
-    public $first_name = '';
-
-    #[Validate('required|min:5')]
-    public $last_name = '';
+    #[Validate('required|min:3')]
+    public $name = '';
 
     #[Validate('required|email')]
     public $email = '';
@@ -23,7 +20,7 @@ class CreateForm extends Component
     #[Validate('required|digits:10')]
     public $phone = '';
 
-    #[Validate('required|min:10')]
+    #[Validate('required|min:10|max:254')]
     public $message = '';
 
 
