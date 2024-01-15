@@ -22,6 +22,14 @@ For more information, please visit the following official sites:
 
 Now you have successfully set up the project. You can access it by visiting the URL provided by the development server.
 
+
+### Database Seeds
+
+The database migration will add default sports, default venue, and an admin user. The admin user credentials are as follows:
+
+- Email: admin@mail.com
+- Password: password
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

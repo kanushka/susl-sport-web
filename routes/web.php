@@ -36,6 +36,10 @@ Route::view('events', 'events')
     ->middleware(['auth', 'admin'])
     ->name('events');
 
+Route::view('bookings', 'bookings')
+    ->middleware(['auth', 'admin'])
+    ->name('bookings');
+
 Route::view('messages', 'messages')
     ->middleware(['auth', 'admin'])
     ->name('messages');

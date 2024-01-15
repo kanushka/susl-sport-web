@@ -1,4 +1,4 @@
-<div class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+<div class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
     @forelse ($this->events as $event)
     <article class="flex max-w-xl flex-col items-start justify-between bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-4">
     
