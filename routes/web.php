@@ -48,4 +48,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::view('notifications', 'notifications')
+    ->middleware(['auth'])
+    ->name('notifications');
+
 require __DIR__.'/auth.php';

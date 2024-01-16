@@ -5,9 +5,11 @@ namespace App\Livewire\Events;
 use App\Models\Event;
 use App\Models\Sport;
 use App\Models\Venue;
+use App\Notifications\EventPublished;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Validate;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Notification;
 
 use Livewire\Component;
 
@@ -67,7 +69,10 @@ class CreateForm extends Component
             $event->update(['image' => $path]);
         }
 
-        // dd($event);
+        // send notifications to all users who have subscribed to the sport
+        $sport = Sport::find($this->sport_id);
+        $subscribers = $sport->users()->get();
+        Notification::send($subscribers, new EventPublished($event));
 
         Session::flash('status', 'event-added');
         return redirect()->route('dashboard');

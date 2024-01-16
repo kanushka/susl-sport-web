@@ -49,10 +49,11 @@
     </div>
 
     <div class="flex items-center gap-4">
-        <x-primary-button>{{ __('Save') }}</x-primary-button>
+        <x-primary-button wire:loading.remove>{{ __('Save') }}</x-primary-button>
+        <x-primary-button wire:loading>{{ __('Saving and Sending notifications...') }}</x-primary-button>
 
         <x-action-message class="me-3" on="profile-updated">
-            {{ __('Saved.') }}
+            {{ __('Saved and Send notifications to all subscribed users.') }}
         </x-action-message>
     </div>
 </form>

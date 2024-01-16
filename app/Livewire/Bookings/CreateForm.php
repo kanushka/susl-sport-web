@@ -4,7 +4,10 @@ namespace App\Livewire\Bookings;
 
 use App\Models\Booking;
 use App\Models\Message;
+use App\Models\User;
 use App\Models\Venue;
+use App\Notifications\VenueBooked;
+use App\Notifications\VenueBookingRequested;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Validate;
 
@@ -20,7 +23,7 @@ class CreateForm extends Component
     #[Validate('required|date|after:today')]
     public $start_date = '';
 
-    #[Validate('required|numeric|min:100|max:1000')]
+    #[Validate('required|numeric|min:20|max:1000')]
     public $attendees = 100;
 
     #[Validate('required|digits:10')]
@@ -41,19 +44,25 @@ class CreateForm extends Component
 
     public function save()
     {
-        $this->validate();
         // additional validation to check if start date is already booked for the selected venue
         $existingBooking = Booking::where('venue_id', $this->venue_id)
-            ->where('start_date', $this->start_date)
-            ->first();
-
+        ->where('start_date', $this->start_date)
+        ->first();
+        
         if ($existingBooking) {
             $this->addError('start_date', 'The selected date is already booked for this venue. Please select another date.');
             return;
         }
+        $this->validate();
 
-        Booking::create($this->all());
+        $booking = Booking::create($this->all());
         Session::flash('status', 'booking-request-sent');
+
+        $user = User::find($this->user_id);
+        $user->notify(new VenueBooked($booking));
+        $admin = User::where('role', 'admin')->first();
+        $admin->notify(new VenueBookingRequested($booking));
+
         return redirect()->route('booking');
     }
 
