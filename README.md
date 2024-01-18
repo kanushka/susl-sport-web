@@ -10,15 +10,22 @@ To set up this project, follow the steps below:
 2. Install Composer, the PHP package manager.
 3. Install Laravel by running `composer global require laravel/installer`.
 4. Install project dependencies by navigating to the project directory and running `composer install`.
-5. Create a `.env` file by copying the `.env.example` file and updating the necessary values.
-6. Run the database migrations by running `php artisan migrate`.
-7. Start the development server by running `php artisan serve`.
+5. Install Node.js and npm on your machine.
+6. Install project dependencies by running `npm install`.
+7. Create a `.env` file by copying the `.env.example` file and updating the necessary values.
+8. Run the database migrations by running `php artisan migrate`.
+9. Start the development server by running `php artisan serve`.
+10. Build the frontend assets by running `npm run dev`.
 
 For more information, please visit the following official sites:
 
 - [PHP](https://www.php.net/)
 - [Composer](https://getcomposer.org/)
 - [Laravel](https://laravel.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Livewire](https://laravel-livewire.com/)
+- [Mailtrap](https://mailtrap.io/)
+
 
 Now you have successfully set up the project. You can access it by visiting the URL provided by the development server.
 

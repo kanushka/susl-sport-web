@@ -29,7 +29,7 @@
     </div>
 
     <div class="">
-        <x-input-label for="photo" :value="__('Event Date')" />
+        <x-input-label for="photo" :value="__('Event Cover')" />
         <x-text-input wire:model="photo" id="photo" class="block mt-1 w-full" type="file" name="photo" />
         <x-input-error :messages="$errors->get('photo')" class="mt-2" />
     </div>

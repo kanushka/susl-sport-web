@@ -1,8 +1,8 @@
 <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">SUSL Sports</span>
-            <x-application-logo class="block h-10 w-auto fill-current text-gray-800 dark:text-gray-200" />
+            <x-application-logo class="block h-24 w-auto fill-current text-gray-200" />
         </a>
     </div>
     <div class="flex lg:hidden">
@@ -13,7 +13,7 @@
             </svg>
         </button>
     </div>
-    <div class="hidden lg:flex lg:gap-x-12">
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12">
         <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
             {{ __('Home') }}
         </x-nav-link>
@@ -21,11 +21,11 @@
         <div class="hidden sm:flex sm:items-center sm:ms-6">
             <x-dropdown align="center">
                 <x-slot name="trigger">
-                    <button class="inline-flex items-center border border-transparent text-sm leading-4  transition ease-in-out duration-150">
-                        <div class="text-sm font-semibold leading-6 text-gray-900">Sports</div>
+                    <button class="inline-flex items-center border border-transparent text-sm leading-4 transition ease-in-out duration-150">
+                        <div class="text-sm font-semibold leading-6 text-gray-200">Sports</div>
 
                         <div class="ms-1">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <svg class="fill-gray-200 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </div>
@@ -70,8 +70,6 @@
         <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" wire:navigate>
             {{ __('Contact') }}
         </x-nav-link>
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         @if (Route::has('login'))
         <livewire:welcome.navigation />
         @endif

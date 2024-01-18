@@ -1,2 +1,2 @@
-<img src="{{ asset('images/logo-dark.png') }}" alt="susl-logo" {{ $attributes }}>
+<img src="{{ asset('images/logo.png') }}" alt="susl-logo" {{ $attributes }}>
 
