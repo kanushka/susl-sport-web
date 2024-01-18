@@ -37,29 +37,30 @@
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
                 <div class="slide">
-                    <img src="images/hjhjhk.jpg">
+                    <img src="images/hjhjhk.jpg" class="rounded">
                 </div>
+               
             </div>
         </div>
     </div>
@@ -72,22 +73,22 @@
         <p class="mt-3 text-lg text-center leading-8 text-gray-500">Sabaragamuwa University of Sri Lanka has many sports facilities besides the sports faculty.</p>
         <div class="mt-12 flex justify-center">
             <div class="grid grid-cols-2 gap-10">
-                <div class="max-w-lg rounded ring-1 ring-gray-200 p-4 shadow-lg">
+                <div class="max-w-lg rounded p-4 shadow-lg">
                     <img src="images/hjhjhk.jpg" alt="" class="rounded">
                     <h3 class="mt-4 text-2xl font-bold tracking-tight text-gray-900">Swimming Pool</h3>
                     <p class="mt-1 text-base leading-7 text-gray-600">Near the main gate of the university premises.</p>
                 </div>
-                <div class="max-w-lg rounded ring-1 ring-gray-200 p-4 shadow-lg">
+                <div class="max-w-lg rounded p-4 shadow-lg">
                     <img src="images/hjhjhk.jpg" alt="" class="rounded">
                     <h3 class="mt-4 text-2xl font-bold tracking-tight text-gray-900">Play Ground</h3>
                     <p class="mt-1 text-base leading-7 text-gray-600">Near the main canteen of the university premises.</p>
                 </div>
-                <div class="max-w-lg rounded ring-1 ring-gray-200 p-4 shadow-lg">
+                <div class="max-w-lg rounded p-4 shadow-lg">
                     <img src="images/hjhjhk.jpg" alt="" class="rounded">
                     <h3 class="mt-4 text-2xl font-bold tracking-tight text-gray-900">Indoor Stadium</h3>
                     <p class="mt-1 text-base leading-7 text-gray-600">Near the tennis court of the university premises.</p>
                 </div>
-                <div class="max-w-lg rounded ring-1 ring-gray-200 p-4 shadow-lg">
+                <div class="max-w-lg rounded p-4 shadow-lg">
                     <img src="images/hjhjhk.jpg" alt="" class="rounded">
                     <h3 class="mt-4 text-2xl font-bold tracking-tight text-gray-900">Gymnasium</h3>
                     <p class="mt-1 text-base leading-7 text-gray-600">Near the pavilion of the university premises.</p>
@@ -98,7 +99,7 @@
     </div>
 
     <div class="my-40 flex justify-center">
-        <div class="relative rounded-full px-4 py-2 leading-6 text-gray-600 text-lg ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+        <div class="relative rounded-full px-4 py-2 leading-6 text-gray-600 text-lg ring-2 ring-gray-900/10 hover:ring-gray-900/20">
             Need to make a booking or get more information about our sports facilities? <a href="/contact" class="ml-2 font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Contact Us <span aria-hidden="true">&rarr;</span></a>
         </div>
     </div>
