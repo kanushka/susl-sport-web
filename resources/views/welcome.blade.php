@@ -7,7 +7,7 @@
                 <h1 class="text-7xl font-bold text-white uppercase tracking-normal">Sabara Sports</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-100">Empower your university journey with the invigorating rhythm of sports</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#" class="rounded-full bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase">General Instructions</a>
+                    <a href="/general" class="rounded-full bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase">General Instructions</a>
                 </div>
             </div>
         </div>

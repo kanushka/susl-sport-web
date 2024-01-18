@@ -25,6 +25,7 @@ Route::view('/sports/cricket', 'sports-cricket');
 Route::view('/sports/kabadi', 'sports-kabadi');
 Route::view('/sports/football', 'sports-football');
 
+Route::view('/general', 'general')->name('general');
 Route::view('/booking', 'booking')->name('booking');
 Route::view('/contact', 'contact')->name('contact');
 
