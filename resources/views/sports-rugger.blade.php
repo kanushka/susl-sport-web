@@ -1,6 +1,6 @@
 <x-layout>
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-[45vh]">
-        <img src="../images/cricket/cover_cricket.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" style="filter: brightness(40%)">
+        <img src="../images/rugger/cover_rugger.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" style="filter: brightness(40%)">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
@@ -24,7 +24,7 @@
                         <p class="mt-6 text-lg leading-8 text-gray-600">Sabaragamuwa university is offering Rugger as a sport that every undergraduate can do. There are IndoorStadium are available in the university premises. Every Monday and Tuesday 5.00 p.m. to 8.00 p.m. practices are doing. One coach and two captains (girls/boys) are available. When coming to practice you need bring Rackets and shuttlecocks.</p>
                     </div>
                 </div>
-                <img src="../images/cricket/cricket_team.JPEG" alt="" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+                <img src="../images/rugger/rugger_team.jpg" alt="" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
             </div>
         </div>
     </div>
@@ -77,12 +77,8 @@
         <h3 class="mt-4 text-3xl font-bold text-center tracking-tight text-indigo-600 uppercase">Team</h3>
         <div class="mt-10 flex flex-row gap-10 ">
             <div>
-                <img src="../images/cricket/cricket_captain(boys).JPG" alt="Captain" class="max-w-[20vw] rounded">
+                <img src="../images/rugger/rugger captain.jpg" alt="Captain" class="max-w-[20vw] rounded">
                 <p class="mt-2 text-lg text-center leading-8 text-gray-500">Captain (Boys)</p>
-            </div>
-            <div>
-                <img src="../images/cricket/cricket_captain(girls).jpg" alt="Captain" class="max-w-[20vw] rounded">
-                <p class="mt-2 text-lg text-center leading-8 text-gray-500">Captain (Girls)</p>
             </div>
         </div>
     </div>
